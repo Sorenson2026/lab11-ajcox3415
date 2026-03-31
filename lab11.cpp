@@ -18,7 +18,7 @@ int main()
 	int fileArray[100];
 
 	// Asks for the name of the file.
-	cout << "Please input your file name: ";
+	cout << " Hello !" << "\nPlease input your file name : ";
 	cin >> fileName;
 
 	//Opens the file
