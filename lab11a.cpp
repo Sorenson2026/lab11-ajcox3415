@@ -111,16 +111,15 @@ double calcAverage(int total, int size)
     return static_cast<double>(total) / size;
 }
 
+//Calculates standard diviation
 double calcStandardDeviation(const int arr[], int size, double average)
 {
     double sumOfSquares = 0.0;
 
     for (int i = 0; i < size; i++)
     {
-        // Step 2 & 3: (number - mean)^2
         sumOfSquares += pow(arr[i] - average, 2);
     }
 
-    // Step 4 & 5: Sqrt of (Sum / count)
     return sqrt(sumOfSquares / size);
 }
